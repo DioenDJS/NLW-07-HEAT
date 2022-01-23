@@ -6,8 +6,12 @@ class CreateMessageService {
             data: {
                 text,
                 user_id
+            },
+            include:{
+                user:true
             }
-       })
+       });
+       return message;
     }
 }
 
