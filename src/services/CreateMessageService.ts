@@ -16,5 +16,3 @@ class CreateMessageService {
 }
 
 export { CreateMessageService};
-
-// tempo de video 1:18:43
