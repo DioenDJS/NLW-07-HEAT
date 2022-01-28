@@ -7,6 +7,10 @@ import { router } from "./routes";
 
 const app = express();
 
+const serverHttp = http.createServer(app);
+
+const io = new Server(serverHttp);
+
 app.use(express.json());
 
 app.use(router);
